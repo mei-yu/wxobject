@@ -1,0 +1,13 @@
+<view class="tab-bar">
+    <view wx:for="{{list}}" wx:key="index" class="tab-bar-item" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+        <view class="center_part">
+            <view class="center_part_code" wx:if="{{index == 2}}">
+                <image class=" center-has-noimg" src="{{centerImg}}"></image>
+            </view>
+            <image class=" center-has-image" src="{{selected === index ? item.selectedIconPath : item.iconPath}}" wx:else></image>
+        </view>
+        <view style="color: {{selected === index ? selectedColor : color}}" class="cover-text">
+            {{item.text}}
+        </view>
+    </view>
+</view>

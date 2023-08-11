@@ -1,0 +1,136 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="head_box">
+        <view class="head_text">早上好！张三先生</view>
+        <view  class="news">
+            <image class="doctor" src="../../images/icon.png" mode="aspectFit"></image>
+            <view class="red">1</view>
+        </view>
+    </view>
+    <view class="swiper">
+        <view class="ad-swiper">
+            <swiper 
+                class="ad-swiper__main"
+                autoplay="{{true}}"
+                circular="{{true}}"
+                indicator-dots
+                interval="3000"
+            >
+                <block wx:for="{{imgData}}" wx:key="unique">
+                    <swiper-item wx:if="{{item}}">
+                        <block>
+                            <view>
+                                <image src="{{item}}" mode="widthFix"></image>
+                            </view>
+                        </block>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+    <view class="cell_box">
+        <view class="exportAsk">
+            <image mode="aspectFit" src="../../images/index.jpg"></image>
+        </view>
+        <view class="exportAsk">
+            <image mode="aspectFit" src="../../images/index.jpg"></image>
+        </view>
+        <view class="exportAsk">
+            <image mode="aspectFit" src="../../images/index.jpg"></image>
+        </view>
+        <view class="exportAsk ">
+            <image mode="aspectFit" src="../../images/index.jpg"></image>
+        </view>
+        <view class="exportAsk ">
+            <image mode="aspectFit" src="../../images/index.jpg"></image>
+        </view>
+    </view>
+    <view class="bannerList">
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none" bindtap="openPopup" data-index="1" class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+    </view>
+</view>
+<view class="popup-box" wx:if="{{showIndex=='1'}}" bindtap="closePopup"></view> 
+<view class="info-center" style="top:{{height*0.3}}px;" wx:if="{{showIndex=='1'}}">
+    <view class="info-text">功能</view> 
+    <view class="bannerList">
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+        <view  hover-class="none"  class="bannerList-item">
+            <image class="icon_img" src="../../images/index.jpg" />
+            <view>功能</view>
+        </view>
+    </view>
+</view>

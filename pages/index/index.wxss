@@ -1,0 +1,145 @@
+/**index.wxss**/
+.head_box{
+  position: relative;
+  width: 750rpx;
+  height: 80rpx;
+  background-color: purple;
+  padding:  0 14rpx;
+  box-sizing: border-box;
+}
+.head_text{
+  width: 100%;
+  line-height: 80rpx;
+  color: aquamarine;
+  text-align: center;
+}
+.headKeyIpt{
+  width: 600rpx;
+  height: 60rpx;
+  padding: 0;
+}
+.news {
+  position: absolute;
+  right: 50rpx;
+  top: 20rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.news .red {
+  position: absolute;
+  top: -7rpx;
+  right: -5rpx;
+  border-radius: 50%;
+  padding: 0 9rpx;
+  font-size: 18rpx;
+  color: #fff;
+  background-color: red;
+}
+.doctor{
+  width: 40rpx;
+  height: 40rpx;
+}
+.swiper {
+  width: 100%;
+  height: 400rpx
+}
+.ad-swiper {
+  width: 1005;
+  height:100%;
+  position: relative;
+}
+.ad-swiper swiper {
+  height: 100%;
+}
+.ad-swiper swiper navigator,
+.ad-swiper swiper view {
+  height: 100%;
+}
+.ad-swiper swiper-item  image {
+  width: 100%;
+  height: 100%;
+}
+.ad-swiper__dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10rpx;
+  display: flex;
+}
+.ad-swiper__dots.is-center {
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+.ad-swiper__dot {
+  width: 12rpx;
+  height: 12rpx;
+  margin-left: 8rpx;
+  border-radius: 50%;
+  background-color:#fff;
+}
+.ad-swiper__dot.is-current {
+  background-color: #000;
+}
+.cell_box {
+  width: 100vw; 
+  padding: 25rpx 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  background-color: purple;
+}
+.cell_box .exportAsk {
+  flex: 1;
+  width: 150rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  background-repeat: 10rpx;
+}
+.cell_box image {
+  width: 100%;
+  height: 100%;
+}
+.bannerList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 24rpx;
+}
+.bannerList-item {
+  width: 21%;
+  height: 120rpx;
+  margin: 2% ;
+  text-align: center;
+}
+.bannerList-item  image {
+  width: 100%;
+  height: 70%;
+}
+.popup-box{
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.info-center{
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  border-radius: 10rpx; 
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.info-center .info-text {
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
